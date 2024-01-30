@@ -2,8 +2,8 @@
 
 let correctAnswers = ["Jason Cluley", "Soccer"];
 let answeredQuestions = [
-  "My name is JASON CLULEY!",
-  `My favourite sport is SOCCER! ${"<br />"} ${"<h6>(But I like most sports - especially soccer, tennis and pickleball.)</h6>"}`,
+  `My name is <h3 style='color:lime;display:inline-block;'>JASON CLULEY!</h3>`,
+  `My favourite sport is <h3 style='color:lime;display:inline-block;'>SOCCER!</h3> ${"<br />"} ${"<h6>(But I like most sports - especially soccer, tennis and pickleball)</h6>"}`,
 ];
 // Looping through the six buttons
 for (let j = 1; j < 3; j++) {
@@ -25,8 +25,8 @@ for (let j = 1; j < 3; j++) {
         // Changing the text to show that my name has been revealed
         // InnerHTML because I'm changing some styling in this array
         questionText.innerHTML = answeredQuestions[j - 1];
-        questionText.style.color = "lime";
-        questionText.style.fontSize = "26px";
+        questionText.style.color = "orangered";
+        questionText.style.fontSize = "25px";
         // Changing the background from yellowish to blackish
         background.style.backgroundColor = "#222";
         // If the wrong answer is picked, change the answer button

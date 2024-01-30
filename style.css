@@ -28,11 +28,17 @@ h1 {
   align-items: center;
   /* gap: 10px; */
   height: 200px;
-  background-color: rgb(255, 255, 106);
+  background-color: #ffff6a;
+  border-width: 2px 0;
+  border-color: orange;
+  border-style: solid;
+  /* negative margin-bottom to get rid of the double-border between */
+  margin-bottom: -2px;
 }
 
 .question-block h3 {
   margin: 10px 0;
+  text-align: center;
 }
 
 .container {

@@ -1,12 +1,13 @@
 "use strict";
 
-let correctAnswers = ["Jason Cluley", "Soccer"];
+let correctAnswers = ["Jason Cluley", "Soccer", "Kate"];
 let answeredQuestions = [
   `My name is <h3 style='color:lime;display:inline-block;'>JASON CLULEY!</h3>`,
   `My favourite sport is <h3 style='color:lime;display:inline-block;'>SOCCER!</h3> ${"<br />"} ${"<h6>(But I like most sports - especially soccer, tennis and pickleball)</h6>"}`,
+  `My girlfriend's name is <h3 style='color:lime;display:inline-block;'>KATE!</h3>`,
 ];
 // Looping through the six buttons
-for (let j = 1; j < 3; j++) {
+for (let j = 1; j < correctAnswers.length + 1; j++) {
   for (let i = 1; i < 7; i++) {
     const answerBtn = document.querySelector(`.a-${j}-${i}`);
     const questionText = document.querySelector(`.question-block-${j} h3`);
